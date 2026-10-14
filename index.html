@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#3149A6">
+<title>Ariel Kenou — Contact</title>
+<style>
+:root{
+  --blue:#3149A6;
+  --blue2:#4059B7;
+  --light:#F2F2F8;
+  --text:#171717;
+  --muted:#6B6B76;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; font-family:Inter,Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,var(--blue) 0 150px,#f7f7fa 150px 100%);
+}
+.wrap{max-width:520px;margin:0 auto;padding:42px 20px 36px}
+.card{
+  background:white;border-radius:24px;padding:30px 22px 24px;
+  box-shadow:0 14px 40px rgba(35,49,110,.15);
+}
+.avatar{
+  width:76px;height:76px;border-radius:50%;margin:-8px auto 16px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--blue);color:white;font-weight:800;font-size:24px;
+  letter-spacing:-1px;
+}
+h1{text-align:center;color:var(--blue);font-size:25px;margin:0}
+.subtitle{text-align:center;color:var(--muted);margin:7px 0 24px;font-size:14px}
+.buttons{display:grid;gap:12px}
+a.btn{
+  display:flex;align-items:center;gap:14px;text-decoration:none;color:white;
+  background:var(--blue);padding:15px 17px;border-radius:14px;font-weight:700;
+  transition:.15s transform,.15s background;
+}
+a.btn:hover{transform:translateY(-1px);background:var(--blue2)}
+.icon{
+  width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.16);
+  display:flex;align-items:center;justify-content:center;font-size:18px;flex:none
+}
+.label{font-size:15px}.hint{display:block;font-size:11px;font-weight:500;opacity:.8;margin-top:2px}
+.note{text-align:center;color:var(--muted);font-size:11px;margin:18px 0 0}
+.cvbox{margin-top:18px;border-top:1px solid #e7e7ee;padding-top:16px}
+.cvbox summary{cursor:pointer;color:var(--blue);font-weight:700;font-size:13px}
+iframe{width:100%;height:560px;border:0;border-radius:12px;margin-top:12px;background:#eee}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="card">
+    <div class="avatar">AK</div>
+    <h1>ARIEL JOHAN KENOU KENFACK</h1>
+    <div class="subtitle">Élève ingénieur en automobile · ISAT</div>
+
+    <div class="buttons">
+      <a class="btn" href="cv.pdf" target="_blank" rel="noopener">
+        <span class="icon">📄</span>
+        <span class="label">Mon CV<span class="hint">Ouvrir le CV en PDF</span></span>
+      </a>
+
+      <a class="btn" href="mailto:kenouariel@gmail.com">
+        <span class="icon">✉</span>
+        <span class="label">Mon e-mail<span class="hint">kenouariel@gmail.com</span></span>
+      </a>
+
+      <a class="btn" href="https://www.linkedin.com/in/ariel-kenou-955293435/" target="_blank" rel="noopener">
+        <span class="icon">in</span>
+        <span class="label">Mon LinkedIn<span class="hint">linkedin.com/in/ariel-kenou-955293435</span></span>
+      </a>
+
+      <a class="btn" href="tel:+33651855313">
+        <span class="icon">☎</span>
+        <span class="label">Mon numéro<span class="hint">+33 6 51 85 53 13</span></span>
+      </a>
+    </div>
+
+    <details class="cvbox">
+      <summary>Voir le CV directement sur la page</summary>
+      <iframe src="cv.pdf" title="CV d'Ariel Kenou"></iframe>
+    </details>
+
+    <p class="note">Page de contact personnelle · Ariel Kenou</p>
+  </section>
+</main>
+</body>
+</html>
